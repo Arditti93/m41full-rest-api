@@ -27,6 +27,9 @@ exports.comparePass = async (request, response, next) => {
     }
 }
 
+// Authorization 
+// Bearer token
+
 exports.tokenCheck = async (req, res, next) => {
     try {
         if (req.header("Authorization")) {
